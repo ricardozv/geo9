@@ -5,19 +5,20 @@
 {% block body %}
     <h1>Criando novo cliente</h1>
 
-    <table class="table">
+    <table border="1px" cellpadding="5px" cellspacing="0" >
         <thead>
+        
             <tr>
-                <th>Id</th>
-                <th>Nome</th>
-                <th>Endereco</th>
-                <th>Latitude</th>
-                <th>Longitude</th>
-                <th>Cpf</th>
-                <th>Email</th>
-                <th>Aniversario</th>
-                <th>Senha</th>
-                <th>actions</th>
+                <th>ID</th>
+                <th>NOME</th>
+                <th>ENDEREÇO</th>
+                <th>LATITUDE</th>
+                <th>LONGITUDE</th>
+                <th>CPF</th>
+                <th>EMAIL</th>
+                <th>DATA DE ANIVERÁRIO</th>
+                <th>SENHA</th>
+                <th>AÇÕES</th>
             </tr>
         </thead>
         <tbody>
@@ -33,7 +34,7 @@
                 <td>{{ client.aniversario }}</td>
                 <td>{{ client.senha }}</td>
                 <td>
-                    <a href="{{ path('client_show', {'id': client.id}) }}">Mostrar</a>
+                    <a href="{{ path('client_show', {'id': client.id}) }}" >Mostrar</a>
                     <a href="{{ path('client_edit', {'id': client.id}) }}">editar</a>
                 </td>
             </tr>
@@ -45,25 +46,34 @@
         </tbody>
     </table>
 
-    <a href="{{ path('client_new') }}">Criar Novo Cliente</a>
-    <h2>Google Maps</h2>
+    <a href="{{ path('client_new') }}"  >Criar Novo Cliente</a>
+    <h1>Google Maps</h1>
 
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
    
     <style>
-    
-      #map {
-        height: 80%;
+          h1, a { 
+            text-align:center; 
+     }
+
+          #map {
+            height: 80%;
       }
-      
-      html, body {
         
-        height: 90%;
-        margin: 20;
-        padding: 20;
+
+      
+            html, body {
+        
+            height: 90%;
+            margin: 20;
+            padding: 20;
       }
+
+
+
+      
     </style>
   </head>
 
