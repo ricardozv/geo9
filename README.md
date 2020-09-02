@@ -7,7 +7,7 @@ Crud em PHP. </p>
 
 
 <h1> Iniciando o projeto </h1>
-<h2> Crie uma pasta, abra essa pasta com o terminal e digite o comando #git clone https://github.com/ricardozv/geo9.git </h2>
+<h3> Crie uma pasta, abra essa pasta com o terminal e digite o comando #git clone https://github.com/ricardozv/geo9.git </h3>
 <p> Depois cd geo9, digite o comando #composer intall esse comando vai instalar o projeto 
 localmente <p>
 <h2>Procure pela pasta public, dentro dessa pasta, usando o terminal, execute #php -S 127.0.0.1:8080</h2>
