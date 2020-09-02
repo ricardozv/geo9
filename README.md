@@ -12,5 +12,5 @@ Crud em PHP. </p>
 localmente <p>
 <h2>Procure pela pasta public, dentro dessa pasta, usando o terminal, execute #php -S 127.0.0.1:8080</h2>
 <p1>Esse comando vai permitir a execução do projeto</p1> 
-<h1>Pré-requisitos para execução do projeto<h1>
+<h3>Pré-requisitos para execução do projeto<h3>
 <p>curl, composer, symfony, php e xampp <p>
