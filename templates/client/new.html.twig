@@ -2,6 +2,7 @@
 
 {% block title %}Novo cliente{% endblock %}
 
+
 {% block body %}
     <h1>Novo Cliente</h1>
 
@@ -10,11 +11,161 @@
     <a href="{{ path('client_index') }} ">Voltar para lista</a>
 
 <style>
-          h1 { 
+
+/* <form name="client" method="post">
+    <div id="client"><div>
+        <label for="client_nome" class="required">Nome</label>
+        <input type="text" id="client_nome" name="client[nome]" required="required" maxlength="255" />
+    </div>
+    <div>
+        <label for="client_endereco" class="required">Endereco</label>
+        <input type="text" id="client_endereco" name="client[endereco]" required="required" maxlength="255" />
+    </div>
+    <div>
+        <label for="client_latitude" class="required">Latitude</label>
+        <input type="text" id="client_latitude" name="client[latitude]" required="required" />
+    </div>
+    <div>
+        <label for="client_longitude" class="required">Longitude</label>
+        <input type="text" id="client_longitude" name="client[longitude]" required="required" />
+    </div>
+    <div>
+        <label for="client_cpf" class="required">Cpf</label>
+        <input type="text" id="client_cpf" name="client[cpf]" required="required" maxlength="15" />
+    </div>
+    <div>
+        <label for="client_email" class="required">Email</label>
+        <input type="text" id="client_email" name="client[email]" required="required" maxlength="255" />
+    </div>
+    <div>
+        <label for="client_aniversario" class="required">Aniversario</label>
+        <input type="text" id="client_aniversario" name="client[aniversario]" required="required" maxlength="10" />
+    </div>
+    <div>
+        <label for="client_senha" class="required">Senha</label>
+        <input type="text" id="client_senha" name="client[senha]" required="required" maxlength="50" />
+    </div>
+        <input type="hidden" id="client__token" name="client[_token]" value="QwN5ejmkAm5QiaxlDIithbqN9d0GKruqUodKkzqBaoU" /></div>
+    <button class="btn">Save</button>
+</form>
+
+*/
+
+
+        h1 {
+            margin-left: 50px;
+        }
+
+        body {
+            background-color: lightblue;
+            /*background-image: url("paper.gif");*/
+        }
+          #client { 
             text-align:center; 
+
      }
 
+     #client_nome {
+        
+         border:2px solid Violet;
+         margin-left: 10px;
+         background-color: DodgerBlue;
+         opacity: 0.7;
+         font-size: 13px;
+         margin: 05px 100px 25px 20px;
+        
+
+     }
+
+     #client_endereco {
+        border:2px solid Violet;
+         margin-left: 10px;
+         background-color: DodgerBlue;
+         opacity: 0.9;
+         font-size: 13px;
+         margin: 05px 100px 25px 20px;
+     }
+        #client_latitude {
+        border:2px solid Violet;
+         margin-left: 10px;
+         background-color: DodgerBlue;
+         opacity: 0.9;
+         font-size: 13px;
+         margin: 05px 100px 25px 20px;
+     }
+        #client_longitude {
+        border:2px solid Violet;
+         margin-left: 10px;
+         background-color: DodgerBlue;
+         opacity: 0.9;
+         font-size: 13px;
+         margin: 05px 150px 25px 20px;
+     }
+        #client_cpf {
+        border:2px solid Violet;
+         margin-left: 10px;
+         background-color: DodgerBlue;
+         opacity: 0.9;
+         font-size: 13px;
+         margin: 05px 150px 25px 20px;
+     }
+        #client_email {
+        border:2px solid Violet;
+         margin-left: 10px;
+         background-color: DodgerBlue;
+         opacity: 0.9;
+         font-size: 13px;
+         margin: 05px 150px 25px 20px;
+     }
+        #client_aniversario {
+        border:2px solid Violet;
+         margin-left: 10px;
+         background-color: DodgerBlue;
+         opacity: 0.9;
+         font-size: 13px;
+         margin: 05px 150px 25px 20px;
+     }
+        #client_senha {
+        border:2px solid Violet;
+         margin-left: 10px;
+         background-color: DodgerBlue;
+         opacity: 0.9;
+         font-size: 13px;
+         margin: 05px 150px 25px 20px;
+     }
+
+
+       input {
+             width: 1200px;
+             padding: 12px 20px;
+             margin: 8px 0;
+             box-sizing: border-box;
+           
+            }
+
+
+    a:link {
+  font-size: 20px;
+  box-sizing: border-box;
+  text-align:center;
+  margin: 1004px 25px 30px 15px;
+  
+}
+
+.btn {
+  background-color: #4272EE; /* Blue */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 14px 1005px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
       
-    </style>
+</style>
 {% endblock %}
 
