@@ -1,13 +1,42 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Client{% endblock %}
+{% block title %}Editar{% endblock %}
+
 
 {% block body %}
-    <h1>Edit Client</h1>
+<body style="height:100%; width:50%;">
+    <h1>Editar Cadastro</h1>
 
-    {{ include('client/_form.html.twig', {'button_label': 'Update'}) }}
+    {{ include('client/_form.html.twig', {'button_label': 'Alterar'}) }}
+    
+    <a href="{{ path('client_index') }}">Voltar</a>
 
-    <a href="{{ path('client_index') }}">back to list</a>
 
     {{ include('client/_delete_form.html.twig') }}
+
+    <style>
+      h1 {
+            margin-left: 40px;
+        }
+            body {
+                        /*background-color: lightblue;
+                        /*background-image: url("paper.gif");*/
+                        height: 100%;
+                        margin: 20;
+                        padding: 20; 
+                        width:50%
+                    }
+      a {
+    
+        font-size: 30px;
+        margin-left: 20px;
+      }
+      a:hover {
+        background-color: #1c87c9;
+      }
+      a:active {
+        background-color: #1c87c9;
+      }
+    </style>
+
 {% endblock %}

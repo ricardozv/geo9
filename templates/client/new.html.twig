@@ -8,7 +8,7 @@
 
     {{ include('client/_form.html.twig') }}
 
-    <a href="{{ path('client_index') }} ">Voltar para lista</a>
+    <a href="{{ path('client_index') }} ">Voltar</a>
 
 <style>
 
@@ -52,18 +52,20 @@
 */
 
 
-        h1 {
+      
+        body, html, text {
+            /*background-color: lightblue;
+            /*background-image: url("paper.gif");*/
+            height: 90%;
+            margin: 20;
+            padding: 20;
+        }
+
+          h1 {
             margin-left: 50px;
         }
 
-        body {
-            background-color: lightblue;
-            /*background-image: url("paper.gif");*/
-        }
-          #client { 
-            text-align:center; 
-
-     }
+          
 
      #client_nome {
         
@@ -165,7 +167,23 @@
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
+a {
+    
+        font-size: 50px;
+          font-size: 30px;
+        margin-left: 20px;
+       
+      }
+      a:hover {
+        background-color: #1c87c9;
+      }
+      a:active {
+        background-color: #1c87c9;
+      }
       
 </style>
+<br>
+
 {% endblock %}
 

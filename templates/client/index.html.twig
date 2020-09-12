@@ -5,7 +5,7 @@
 {% block body %}
     <h1>Criando novo cliente</h1>
 
-    <table border="1px" cellpadding="5px" cellspacing="0" >
+    <table border="1px" cellpadding="5px" cellspacing="2" >
         <thead>
         
             <tr>
@@ -46,6 +46,9 @@
         </tbody>
     </table>
 
+    <br>
+    <br>
+
     <a href="{{ path('client_new') }}"  >Criar Novo Cliente</a>
     <h1>Google Maps</h1>
 
@@ -54,6 +57,14 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
    
     <style>
+
+             body {
+                        background-color: lightblue;
+                        /*background-image: url("paper.gif");*/
+                    }
+
+
+
           h1, a { 
             text-align:center; 
      }
@@ -70,6 +81,19 @@
             margin: 20;
             padding: 20;
       }
+
+      a {
+    
+        font-size: 20px;
+       
+      }
+      a:hover {
+        background-color: #1c87c9;
+      }
+      a:active {
+        background-color: #1c87c9;
+      }
+      
 
 
 
