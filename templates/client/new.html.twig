@@ -7,55 +7,14 @@
     <h1>Novo Cliente</h1>
 
     {{ include('client/_form.html.twig') }}
-
+    
     <a href="{{ path('client_index') }} ">Voltar</a>
+    <br>
+    <br>
 
 <style>
-
-/* <form name="client" method="post">
-    <div id="client"><div>
-        <label for="client_nome" class="required">Nome</label>
-        <input type="text" id="client_nome" name="client[nome]" required="required" maxlength="255" />
-    </div>
-    <div>
-        <label for="client_endereco" class="required">Endereco</label>
-        <input type="text" id="client_endereco" name="client[endereco]" required="required" maxlength="255" />
-    </div>
-    <div>
-        <label for="client_latitude" class="required">Latitude</label>
-        <input type="text" id="client_latitude" name="client[latitude]" required="required" />
-    </div>
-    <div>
-        <label for="client_longitude" class="required">Longitude</label>
-        <input type="text" id="client_longitude" name="client[longitude]" required="required" />
-    </div>
-    <div>
-        <label for="client_cpf" class="required">Cpf</label>
-        <input type="text" id="client_cpf" name="client[cpf]" required="required" maxlength="15" />
-    </div>
-    <div>
-        <label for="client_email" class="required">Email</label>
-        <input type="text" id="client_email" name="client[email]" required="required" maxlength="255" />
-    </div>
-    <div>
-        <label for="client_aniversario" class="required">Aniversario</label>
-        <input type="text" id="client_aniversario" name="client[aniversario]" required="required" maxlength="10" />
-    </div>
-    <div>
-        <label for="client_senha" class="required">Senha</label>
-        <input type="text" id="client_senha" name="client[senha]" required="required" maxlength="50" />
-    </div>
-        <input type="hidden" id="client__token" name="client[_token]" value="QwN5ejmkAm5QiaxlDIithbqN9d0GKruqUodKkzqBaoU" /></div>
-    <button class="btn">Save</button>
-</form>
-
-*/
-
-
       
         body, html, text {
-            /*background-color: lightblue;
-            /*background-image: url("paper.gif");*/
             height: 90%;
             margin: 20;
             padding: 20;
@@ -70,7 +29,6 @@
      #client_nome {
         
          border:2px solid Violet;
-         margin-left: 10px;
          background-color: DodgerBlue;
          opacity: 0.7;
          font-size: 13px;
@@ -161,9 +119,9 @@
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  
   font-size: 16px;
-  margin: 14px 1005px;
+  margin: 14px 1009px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
